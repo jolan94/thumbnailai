@@ -17,7 +17,7 @@ export function HeroSection() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, ease: "easeOut" }}
-                        className="text-center lg:text-left"
+                        className="text-center lg:text-left relative z-20"
                     >
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
@@ -52,7 +52,7 @@ export function HeroSection() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.4, duration: 0.5 }}
-                            className="mt-8 flex justify-center lg:justify-start"
+                            className="mt-8 flex justify-center lg:justify-start relative z-10"
                         >
                             <StoreBadges size="lg" />
                         </motion.div>
@@ -83,7 +83,7 @@ export function HeroSection() {
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: 0.3, duration: 0.6 }}
-                        className="relative flex justify-center"
+                        className="relative flex justify-center z-0"
                     >
                         <div className="relative">
                             {/* Phone Frame */}

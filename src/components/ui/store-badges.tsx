@@ -18,13 +18,11 @@ export function StoreBadge({ store, size = "md", className = "" }: StoreBadgePro
         lg: "h-[160px] w-auto",
     };
 
-    const handleClick = () => {
-        window.open(url, "_blank", "noopener,noreferrer");
-    };
-
     return (
-        <button
-            onClick={handleClick}
+        <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
             className={`inline-block transition-transform hover:scale-105 cursor-pointer ${className}`}
             aria-label={store === "apple" ? "Download on the App Store" : "Get it on Google Play"}
         >
@@ -104,7 +102,7 @@ export function StoreBadge({ store, size = "md", className = "" }: StoreBadgePro
                     <path fill="#FFF" opacity=".25" d="M12.5 7.6L32 18.7c.6.4 1 .8 1 1.3 0-.5-.3-1-1-1.4L12.5 7.5c-1.4-.8-2.5-.2-2.5 1.4V9c0-1.5 1.1-2.2 2.5-1.4z"></path>
                 </svg>
             )}
-        </button>
+        </a>
     );
 }
 

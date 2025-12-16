@@ -10,7 +10,7 @@ import { StoreBadge } from "@/components/ui/store-badges";
 const navLinks = [
     { href: "#features", label: "Features" },
     { href: "#examples", label: "Examples" },
-    { href: "#pricing", label: "Pricing" },
+
     { href: "#faq", label: "FAQ" },
 ];
 

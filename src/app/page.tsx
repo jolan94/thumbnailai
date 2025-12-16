@@ -6,7 +6,7 @@ import { CarouselSection } from "@/components/sections/CarouselSection";
 import { ComparisonSection } from "@/components/sections/ComparisonSection";
 import { ValueProposition } from "@/components/sections/ValueProposition";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
-import { PricingSection } from "@/components/sections/PricingSection";
+
 import { FAQSection } from "@/components/sections/FAQSection";
 import { CTASection } from "@/components/sections/CTASection";
 
@@ -21,7 +21,7 @@ export default function Home() {
         <ComparisonSection />
         <ValueProposition />
         <TestimonialsSection />
-        <PricingSection />
+
         <FAQSection />
         <CTASection />
       </main>
