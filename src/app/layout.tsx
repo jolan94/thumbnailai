@@ -8,6 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://aithumbnailgenerator.app'),
   title: "AI Thumbnail Generator - Create Stunning Thumbnails Instantly",
   description:
     "Generate professional thumbnails using AI. Use your face, sketches, brand identity, or inspiration images — all in one app. Available on iOS and Android.",

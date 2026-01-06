@@ -3,9 +3,15 @@ import Image from "next/image";
 
 const footerLinks = {
     product: [
-        { href: "#features", label: "Features" },
-        { href: "#pricing", label: "Pricing" },
-        { href: "#faq", label: "FAQ" },
+        { href: "/#features", label: "Features" },
+        { href: "/#faq", label: "FAQ" },
+        { href: "/blog", label: "Blog" },
+    ],
+    tools: [
+        { href: "/ai-youtube-thumbnail-generator", label: "AI Thumbnail Generator" },
+        { href: "/youtube-thumbnail-maker", label: "Thumbnail Maker" },
+        { href: "/gaming-thumbnail-maker", label: "Gaming Thumbnails" },
+        { href: "/faceless-youtube-thumbnail-generator", label: "Faceless Thumbnails" },
     ],
     legal: [
         { href: "/privacy", label: "Privacy Policy" },
@@ -22,7 +28,7 @@ export function Footer() {
     return (
         <footer className="bg-secondary/50 border-t border-border">
             <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-16">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
+                <div className="grid grid-cols-2 md:grid-cols-5 gap-8 lg:gap-12">
                     {/* Brand */}
                     <div className="col-span-2 md:col-span-1">
                         <Link href="/" className="flex items-center gap-2 mb-4">
@@ -47,6 +53,23 @@ export function Footer() {
                         <h4 className="font-semibold mb-4">Product</h4>
                         <ul className="space-y-3">
                             {footerLinks.product.map((link) => (
+                                <li key={link.href}>
+                                    <Link
+                                        href={link.href}
+                                        className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                                    >
+                                        {link.label}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    {/* Tools Links */}
+                    <div>
+                        <h4 className="font-semibold mb-4">Tools</h4>
+                        <ul className="space-y-3">
+                            {footerLinks.tools.map((link) => (
                                 <li key={link.href}>
                                     <Link
                                         href={link.href}
