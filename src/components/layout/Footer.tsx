@@ -9,10 +9,11 @@ const footerLinks = {
         { href: "/blog", label: "Blog" },
     ],
     tools: [
+        { href: "/tools/youtube-thumbnail-preview", label: "Thumbnail Preview" },
+        { href: "/tools/youtube-thumbnail-downloader", label: "Thumbnail Downloader" },
         { href: "/ai-youtube-thumbnail-generator", label: "AI Thumbnail Generator" },
         { href: "/youtube-thumbnail-maker", label: "Thumbnail Maker" },
         { href: "/gaming-thumbnail-maker", label: "Gaming Thumbnails" },
-        { href: "/faceless-youtube-thumbnail-generator", label: "Faceless Thumbnails" },
     ],
     legal: [
         { href: "/privacy", label: "Privacy Policy" },

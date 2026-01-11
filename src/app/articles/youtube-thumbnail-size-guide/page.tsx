@@ -1,8 +1,9 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { ArticleCTA } from "@/components/ui/ArticleCTA";
-import { ArrowLeft, Clock, Calendar, CheckCircle } from "lucide-react";
+import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { RelatedTools } from "@/components/ui/RelatedTools";
+import { Clock, Calendar, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
     title: "YouTube Thumbnail Size & Best Practices (2026 Guide) | Thumbly",
@@ -23,14 +24,13 @@ export default function YouTubeThumbnailSizeGuidePage() {
     return (
         <article className="py-24 lg:py-32">
             <div className="max-w-4xl mx-auto px-6 lg:px-8">
-                {/* Back Link */}
-                <Link
-                    href="/articles"
-                    className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8"
-                >
-                    <ArrowLeft className="w-4 h-4" />
-                    Back to Articles
-                </Link>
+                {/* Breadcrumb */}
+                <Breadcrumb
+                    items={[
+                        { label: "Articles", href: "/articles" },
+                        { label: "Thumbnail Size Guide" }
+                    ]}
+                />
 
                 {/* Header */}
                 <header className="mb-12">
@@ -198,6 +198,9 @@ export default function YouTubeThumbnailSizeGuidePage() {
                         If your file exceeds 2MB, try switching from PNG to JPEG, or use image compression tools. Aim for 500KB-1MB for the best balance of quality and upload speed.
                     </p>
                 </div>
+
+                {/* Related Tools */}
+                <RelatedTools />
 
                 {/* CTA */}
                 <ArticleCTA

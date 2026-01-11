@@ -1,9 +1,10 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
+import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { RelatedTools } from "@/components/ui/RelatedTools";
 import { ArticleCTA } from "@/components/ui/ArticleCTA";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft, Clock, Calendar, Bot, User, Check, X, Zap, Paintbrush } from "lucide-react";
+import { Clock, Calendar, Bot, User, Check, X, Zap, Paintbrush } from "lucide-react";
 
 export const metadata: Metadata = {
     title: "AI vs Manual Thumbnail Design: What Works Better? | Thumbly",
@@ -24,14 +25,13 @@ export default function AIvsManualThumbnailDesignPage() {
     return (
         <article className="py-24 lg:py-32">
             <div className="max-w-4xl mx-auto px-6 lg:px-8">
-                {/* Back Link */}
-                <Link
-                    href="/articles"
-                    className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8"
-                >
-                    <ArrowLeft className="w-4 h-4" />
-                    Back to Articles
-                </Link>
+                {/* Breadcrumb */}
+                <Breadcrumb
+                    items={[
+                        { label: "Articles", href: "/articles" },
+                        { label: "AI vs Manual Design" }
+                    ]}
+                />
 
                 {/* Header */}
                 <header className="mb-12">
@@ -327,6 +327,9 @@ export default function AIvsManualThumbnailDesignPage() {
                         The real question isn&apos;t which is &quot;better&quot; — it&apos;s which makes sense for your situation. If you&apos;re spending hours on thumbnails when you could be creating content, AI is worth trying. If design is part of your creative identity, keep doing what works.
                     </p>
                 </div>
+
+                {/* Related Tools */}
+                <RelatedTools />
 
                 {/* CTA */}
                 <ArticleCTA

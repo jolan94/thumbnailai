@@ -33,7 +33,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/articles/thumbnail-ideas-youtube-shorts',
     ]
 
-    const allPages = [...staticPages, ...blogPosts, ...articles]
+    // Tools
+    const tools = [
+        '/tools/youtube-thumbnail-preview',
+        '/tools/youtube-thumbnail-downloader',
+    ]
+
+    const allPages = [...staticPages, ...blogPosts, ...articles, ...tools]
 
     return allPages.map((route) => ({
         url: `${baseUrl}${route}`,
