@@ -9,6 +9,8 @@ import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 
 import { FAQSection } from "@/components/sections/FAQSection";
 import { CTASection } from "@/components/sections/CTASection";
+import { WhyDifferentSection } from "@/components/sections/WhyDifferentSection";
+import { BeforeAfterSection } from "@/components/sections/BeforeAfterSection";
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
+        <WhyDifferentSection />
+        <BeforeAfterSection />
         <FeaturesSection />
         <CarouselSection />
         <ComparisonSection />

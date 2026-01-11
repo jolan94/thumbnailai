@@ -21,11 +21,11 @@ export function CTASection() {
                     className="text-center"
                 >
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-6">
-                        Start Creating Thumbnails
-                        <span className="text-muted-foreground"> in Seconds.</span>
+                        Create Your First Thumbnail
+                        <span className="text-muted-foreground"> in Seconds</span>
                     </h2>
                     <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-10">
-                        Download now and create your first AI-powered thumbnail. No credit card required to get started.
+                        Download Thumbly free. No credit card, no design skills required.
                     </p>
 
                     <motion.div

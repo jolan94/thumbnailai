@@ -35,8 +35,8 @@ export function HeroSection() {
                             transition={{ delay: 0.2, duration: 0.5 }}
                             className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-balance"
                         >
-                            Generate Stunning Thumbnails Instantly
-                            <span className="text-muted-foreground"> — No Design Skills Needed.</span>
+                            Create Scroll-Stopping YouTube Thumbnails
+                            <span className="text-muted-foreground"> on Your Phone in Seconds</span>
                         </motion.h1>
 
                         <motion.p
@@ -45,7 +45,7 @@ export function HeroSection() {
                             transition={{ delay: 0.3, duration: 0.5 }}
                             className="mt-6 text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0"
                         >
-                            Create high-performing thumbnails using AI. Use your face, sketches, brand identity, or inspiration images — all in one app.
+                            For YouTubers, Shorts creators, and solo content creators who want professional thumbnails without Photoshop, design skills, or wasted hours.
                         </motion.p>
 
                         <motion.div
