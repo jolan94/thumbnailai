@@ -28,10 +28,10 @@ export const metadata: Metadata = {
         title: "YouTube Thumbnail Downloader - Free HD Download",
         description: "Download any YouTube video thumbnail in HD quality. Free, fast, no signup required.",
         type: "website",
-        url: "https://aithumbnailgenerator.app/tools/youtube-thumbnail-downloader",
+        url: "https://thumbnailai.pro/tools/youtube-thumbnail-downloader",
     },
     alternates: {
-        canonical: "https://aithumbnailgenerator.app/tools/youtube-thumbnail-downloader",
+        canonical: "https://thumbnailai.pro/tools/youtube-thumbnail-downloader",
     },
 };
 
@@ -231,7 +231,7 @@ export default function YouTubeThumbnailDownloaderPage() {
                         "@type": "WebApplication",
                         "name": "YouTube Thumbnail Downloader",
                         "description": "Download YouTube video thumbnails in HD quality. Free online tool to save thumbnails from any YouTube video.",
-                        "url": "https://aithumbnailgenerator.app/tools/youtube-thumbnail-downloader",
+                        "url": "https://thumbnailai.pro/tools/youtube-thumbnail-downloader",
                         "applicationCategory": "UtilityApplication",
                         "operatingSystem": "Any",
                         "offers": {

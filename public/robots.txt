@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://aithumbnailgenerator.app/sitemap.xml
+Sitemap: https://thumbnailai.pro/sitemap.xml

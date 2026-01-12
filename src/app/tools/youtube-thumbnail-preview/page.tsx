@@ -24,10 +24,10 @@ export const metadata: Metadata = {
         title: "YouTube Thumbnail Size & Preview Tool",
         description: "Check your thumbnail dimensions and preview how it looks across devices.",
         type: "website",
-        url: "https://aithumbnailgenerator.app/tools/youtube-thumbnail-preview",
+        url: "https://thumbnailai.pro/tools/youtube-thumbnail-preview",
     },
     alternates: {
-        canonical: "https://aithumbnailgenerator.app/tools/youtube-thumbnail-preview",
+        canonical: "https://thumbnailai.pro/tools/youtube-thumbnail-preview",
     },
 };
 
@@ -176,7 +176,7 @@ export default function YouTubeThumbnailPreviewPage() {
                         "@type": "WebApplication",
                         "name": "YouTube Thumbnail Size & Preview Tool",
                         "description": "Check your YouTube thumbnail dimensions and preview how it looks on desktop, mobile, and in the feed.",
-                        "url": "https://aithumbnailgenerator.app/tools/youtube-thumbnail-preview",
+                        "url": "https://thumbnailai.pro/tools/youtube-thumbnail-preview",
                         "applicationCategory": "DesignApplication",
                         "operatingSystem": "Any",
                         "offers": {

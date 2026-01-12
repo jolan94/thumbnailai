@@ -12,10 +12,10 @@ export const metadata: Metadata = {
         title: "Blog - AI Thumbnail Generator Tips & Guides",
         description: "Learn how to create better YouTube thumbnails. Tips, guides, and case studies.",
         type: "website",
-        url: "https://aithumbnailgenerator.app/blog",
+        url: "https://thumbnailai.pro/blog",
     },
     alternates: {
-        canonical: "https://aithumbnailgenerator.app/blog",
+        canonical: "https://thumbnailai.pro/blog",
     },
 };
 

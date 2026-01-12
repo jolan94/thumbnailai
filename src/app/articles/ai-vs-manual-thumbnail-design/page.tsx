@@ -13,11 +13,11 @@ export const metadata: Metadata = {
         title: "AI vs Manual Thumbnail Design: What Works Better?",
         description: "An honest comparison of AI-powered versus manual thumbnail creation.",
         type: "article",
-        url: "https://aithumbnailgenerator.app/articles/ai-vs-manual-thumbnail-design",
+        url: "https://thumbnailai.pro/articles/ai-vs-manual-thumbnail-design",
         images: [{ url: "/thumbnails/thumnail_28.jpeg", width: 1280, height: 720 }],
     },
     alternates: {
-        canonical: "https://aithumbnailgenerator.app/articles/ai-vs-manual-thumbnail-design",
+        canonical: "https://thumbnailai.pro/articles/ai-vs-manual-thumbnail-design",
     },
 };
 
@@ -347,7 +347,7 @@ export default function AIvsManualThumbnailDesignPage() {
                         "@type": "Article",
                         "headline": "AI vs Manual Thumbnail Design: What Works Better?",
                         "description": "An honest comparison of AI-powered versus manual thumbnail creation.",
-                        "image": "https://aithumbnailgenerator.app/thumbnails/thumnail_28.jpeg",
+                        "image": "https://thumbnailai.pro/thumbnails/thumnail_28.jpeg",
                         "datePublished": "2026-01-11",
                         "dateModified": "2026-01-11",
                         "author": {
@@ -359,7 +359,7 @@ export default function AIvsManualThumbnailDesignPage() {
                             "name": "Thumbly",
                             "logo": {
                                 "@type": "ImageObject",
-                                "url": "https://aithumbnailgenerator.app/icon.png"
+                                "url": "https://thumbnailai.pro/icon.png"
                             }
                         }
                     })

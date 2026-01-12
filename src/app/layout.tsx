@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://aithumbnailgenerator.app'),
+  metadataBase: new URL('https://thumbnailai.pro'),
   title: "AI Thumbnail Generator - Create Stunning Thumbnails Instantly",
   description:
     "Generate professional thumbnails using AI. Use your face, sketches, brand identity, or inspiration images — all in one app. Available on iOS and Android.",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
       "Generate professional thumbnails using AI. No design skills needed.",
     type: "website",
     locale: "en_US",
-    url: "https://aithumbnailgenerator.app",
+    url: "https://thumbnailai.pro",
     siteName: "AI Thumbnail Generator",
     images: [
       {

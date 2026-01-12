@@ -52,14 +52,14 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
                                 "@type": "ListItem",
                                 "position": 1,
                                 "name": "Home",
-                                "item": "https://aithumbnailgenerator.app"
+                                "item": "https://thumbnailai.pro"
                             },
                             ...items.map((item, index) => ({
                                 "@type": "ListItem",
                                 "position": index + 2,
                                 "name": item.label,
                                 "item": item.href
-                                    ? `https://aithumbnailgenerator.app${item.href}`
+                                    ? `https://thumbnailai.pro${item.href}`
                                     : undefined
                             }))
                         ]

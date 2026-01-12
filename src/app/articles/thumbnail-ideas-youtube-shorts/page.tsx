@@ -13,11 +13,11 @@ export const metadata: Metadata = {
         title: "Thumbnail Ideas for YouTube Shorts",
         description: "Creative thumbnail strategies specifically for YouTube Shorts.",
         type: "article",
-        url: "https://aithumbnailgenerator.app/articles/thumbnail-ideas-youtube-shorts",
+        url: "https://thumbnailai.pro/articles/thumbnail-ideas-youtube-shorts",
         images: [{ url: "/thumbnails/thumnail_29.jpeg", width: 1280, height: 720 }],
     },
     alternates: {
-        canonical: "https://aithumbnailgenerator.app/articles/thumbnail-ideas-youtube-shorts",
+        canonical: "https://thumbnailai.pro/articles/thumbnail-ideas-youtube-shorts",
     },
 };
 
@@ -268,7 +268,7 @@ export default function ThumbnailIdeasYouTubeShortsPage() {
                         "@type": "Article",
                         "headline": "Thumbnail Ideas for YouTube Shorts",
                         "description": "Creative thumbnail strategies specifically for YouTube Shorts.",
-                        "image": "https://aithumbnailgenerator.app/thumbnails/thumnail_29.jpeg",
+                        "image": "https://thumbnailai.pro/thumbnails/thumnail_29.jpeg",
                         "datePublished": "2026-01-11",
                         "dateModified": "2026-01-11",
                         "author": {
@@ -280,7 +280,7 @@ export default function ThumbnailIdeasYouTubeShortsPage() {
                             "name": "Thumbly",
                             "logo": {
                                 "@type": "ImageObject",
-                                "url": "https://aithumbnailgenerator.app/icon.png"
+                                "url": "https://thumbnailai.pro/icon.png"
                             }
                         }
                     })

@@ -12,11 +12,11 @@ export const metadata: Metadata = {
         title: "Best AI Thumbnail Generators in 2025",
         description: "A comprehensive comparison of the top AI thumbnail tools.",
         type: "article",
-        url: "https://aithumbnailgenerator.app/blog/best-ai-thumbnail-generators-2025",
+        url: "https://thumbnailai.pro/blog/best-ai-thumbnail-generators-2025",
         images: [{ url: "/thumbnails/thumnail_23.jpeg", width: 1280, height: 720 }],
     },
     alternates: {
-        canonical: "https://aithumbnailgenerator.app/blog/best-ai-thumbnail-generators-2025",
+        canonical: "https://thumbnailai.pro/blog/best-ai-thumbnail-generators-2025",
     },
 };
 
@@ -307,7 +307,7 @@ export default function BestAIThumbnailGenerators2025Page() {
                         "@type": "Article",
                         "headline": "Best AI Thumbnail Generators in 2025",
                         "description": "A comprehensive comparison of the top AI thumbnail tools.",
-                        "image": "https://aithumbnailgenerator.app/thumbnails/thumnail_23.jpeg",
+                        "image": "https://thumbnailai.pro/thumbnails/thumnail_23.jpeg",
                         "datePublished": "2025-01-05",
                         "author": {
                             "@type": "Organization",

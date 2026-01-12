@@ -12,11 +12,11 @@ export const metadata: Metadata = {
         title: "YouTube Thumbnail Size & Best Practices (2026 Guide)",
         description: "Complete guide to YouTube thumbnail dimensions, resolution, and best practices.",
         type: "article",
-        url: "https://aithumbnailgenerator.app/articles/youtube-thumbnail-size-guide",
+        url: "https://thumbnailai.pro/articles/youtube-thumbnail-size-guide",
         images: [{ url: "/thumbnails/thumnail_25.jpeg", width: 1280, height: 720 }],
     },
     alternates: {
-        canonical: "https://aithumbnailgenerator.app/articles/youtube-thumbnail-size-guide",
+        canonical: "https://thumbnailai.pro/articles/youtube-thumbnail-size-guide",
     },
 };
 
@@ -218,7 +218,7 @@ export default function YouTubeThumbnailSizeGuidePage() {
                         "@type": "Article",
                         "headline": "YouTube Thumbnail Size & Best Practices (2026 Guide)",
                         "description": "Complete guide to YouTube thumbnail dimensions, resolution, file formats, and optimization techniques.",
-                        "image": "https://aithumbnailgenerator.app/thumbnails/thumnail_25.jpeg",
+                        "image": "https://thumbnailai.pro/thumbnails/thumnail_25.jpeg",
                         "datePublished": "2026-01-11",
                         "dateModified": "2026-01-11",
                         "author": {
@@ -230,7 +230,7 @@ export default function YouTubeThumbnailSizeGuidePage() {
                             "name": "Thumbly",
                             "logo": {
                                 "@type": "ImageObject",
-                                "url": "https://aithumbnailgenerator.app/icon.png"
+                                "url": "https://thumbnailai.pro/icon.png"
                             }
                         }
                     })

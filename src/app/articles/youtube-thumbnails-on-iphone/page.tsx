@@ -12,11 +12,11 @@ export const metadata: Metadata = {
         title: "How to Make YouTube Thumbnails on iPhone",
         description: "Step-by-step guide to creating professional YouTube thumbnails on your iPhone.",
         type: "article",
-        url: "https://aithumbnailgenerator.app/articles/youtube-thumbnails-on-iphone",
+        url: "https://thumbnailai.pro/articles/youtube-thumbnails-on-iphone",
         images: [{ url: "/thumbnails/thumnail_26.jpeg", width: 1280, height: 720 }],
     },
     alternates: {
-        canonical: "https://aithumbnailgenerator.app/articles/youtube-thumbnails-on-iphone",
+        canonical: "https://thumbnailai.pro/articles/youtube-thumbnails-on-iphone",
     },
 };
 
@@ -241,7 +241,7 @@ export default function YouTubeThumbnailsOnIPhonePage() {
                         "@type": "Article",
                         "headline": "How to Make YouTube Thumbnails on iPhone",
                         "description": "Step-by-step guide to creating professional YouTube thumbnails on your iPhone.",
-                        "image": "https://aithumbnailgenerator.app/thumbnails/thumnail_26.jpeg",
+                        "image": "https://thumbnailai.pro/thumbnails/thumnail_26.jpeg",
                         "datePublished": "2026-01-11",
                         "dateModified": "2026-01-11",
                         "author": {
@@ -253,7 +253,7 @@ export default function YouTubeThumbnailsOnIPhonePage() {
                             "name": "Thumbly",
                             "logo": {
                                 "@type": "ImageObject",
-                                "url": "https://aithumbnailgenerator.app/icon.png"
+                                "url": "https://thumbnailai.pro/icon.png"
                             }
                         }
                     })

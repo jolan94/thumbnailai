@@ -12,7 +12,7 @@ export const metadata: Metadata = {
         title: pageData.title,
         description: pageData.description,
         type: "website",
-        url: "https://aithumbnailgenerator.app/gaming-thumbnail-maker",
+        url: "https://thumbnailai.pro/gaming-thumbnail-maker",
         images: [
             {
                 url: pageData.thumbnailImages[0],
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         images: [pageData.thumbnailImages[0]],
     },
     alternates: {
-        canonical: "https://aithumbnailgenerator.app/gaming-thumbnail-maker",
+        canonical: "https://thumbnailai.pro/gaming-thumbnail-maker",
     },
 };
 

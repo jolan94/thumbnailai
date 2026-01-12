@@ -12,11 +12,11 @@ export const metadata: Metadata = {
         title: "Best Colors for YouTube Thumbnails That Get Clicks",
         description: "Learn which colors drive the highest CTR on YouTube thumbnails.",
         type: "article",
-        url: "https://aithumbnailgenerator.app/articles/best-colors-for-youtube-thumbnails",
+        url: "https://thumbnailai.pro/articles/best-colors-for-youtube-thumbnails",
         images: [{ url: "/thumbnails/thumnail_27.jpeg", width: 1280, height: 720 }],
     },
     alternates: {
-        canonical: "https://aithumbnailgenerator.app/articles/best-colors-for-youtube-thumbnails",
+        canonical: "https://thumbnailai.pro/articles/best-colors-for-youtube-thumbnails",
     },
 };
 
@@ -255,7 +255,7 @@ export default function BestColorsForThumbnailsPage() {
                         "@type": "Article",
                         "headline": "Best Colors for YouTube Thumbnails That Get Clicks",
                         "description": "Learn which colors drive the highest CTR on YouTube thumbnails.",
-                        "image": "https://aithumbnailgenerator.app/thumbnails/thumnail_27.jpeg",
+                        "image": "https://thumbnailai.pro/thumbnails/thumnail_27.jpeg",
                         "datePublished": "2026-01-11",
                         "dateModified": "2026-01-11",
                         "author": {
@@ -267,7 +267,7 @@ export default function BestColorsForThumbnailsPage() {
                             "name": "Thumbly",
                             "logo": {
                                 "@type": "ImageObject",
-                                "url": "https://aithumbnailgenerator.app/icon.png"
+                                "url": "https://thumbnailai.pro/icon.png"
                             }
                         }
                     })

@@ -11,10 +11,10 @@ export const metadata: Metadata = {
         title: "Learn - YouTube Thumbnail Guides & Tips",
         description: "Master YouTube thumbnail design with our comprehensive guides.",
         type: "website",
-        url: "https://aithumbnailgenerator.app/articles",
+        url: "https://thumbnailai.pro/articles",
     },
     alternates: {
-        canonical: "https://aithumbnailgenerator.app/articles",
+        canonical: "https://thumbnailai.pro/articles",
     },
 };
 

@@ -12,11 +12,11 @@ export const metadata: Metadata = {
         title: "Gaming Thumbnails That Get Clicks",
         description: "Design tips and examples from top gaming creators.",
         type: "article",
-        url: "https://aithumbnailgenerator.app/blog/gaming-thumbnails-that-get-clicks",
+        url: "https://thumbnailai.pro/blog/gaming-thumbnails-that-get-clicks",
         images: [{ url: "/thumbnails/thumnail_24.jpeg", width: 1280, height: 720 }],
     },
     alternates: {
-        canonical: "https://aithumbnailgenerator.app/blog/gaming-thumbnails-that-get-clicks",
+        canonical: "https://thumbnailai.pro/blog/gaming-thumbnails-that-get-clicks",
     },
 };
 
@@ -250,7 +250,7 @@ export default function GamingThumbnailsThatGetClicksPage() {
                         "@type": "Article",
                         "headline": "Gaming Thumbnails That Get Clicks",
                         "description": "Design tips and examples from top gaming creators.",
-                        "image": "https://aithumbnailgenerator.app/thumbnails/thumnail_24.jpeg",
+                        "image": "https://thumbnailai.pro/thumbnails/thumnail_24.jpeg",
                         "datePublished": "2025-01-04",
                         "author": {
                             "@type": "Organization",

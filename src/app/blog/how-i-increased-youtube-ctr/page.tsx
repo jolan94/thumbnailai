@@ -12,11 +12,11 @@ export const metadata: Metadata = {
         title: "How I Increased YouTube CTR Using Better Thumbnails",
         description: "A founder story about the journey from low CTR to viral thumbnails.",
         type: "article",
-        url: "https://aithumbnailgenerator.app/blog/how-i-increased-youtube-ctr",
+        url: "https://thumbnailai.pro/blog/how-i-increased-youtube-ctr",
         images: [{ url: "/thumbnails/thumnail_22.jpeg", width: 1280, height: 720 }],
     },
     alternates: {
-        canonical: "https://aithumbnailgenerator.app/blog/how-i-increased-youtube-ctr",
+        canonical: "https://thumbnailai.pro/blog/how-i-increased-youtube-ctr",
     },
 };
 
@@ -206,7 +206,7 @@ export default function HowIIncreasedYouTubeCTRPage() {
                         "@type": "Article",
                         "headline": "How I Increased YouTube CTR Using Better Thumbnails",
                         "description": "A founder story about the journey from low CTR to viral thumbnails.",
-                        "image": "https://aithumbnailgenerator.app/thumbnails/thumnail_22.jpeg",
+                        "image": "https://thumbnailai.pro/thumbnails/thumnail_22.jpeg",
                         "datePublished": "2025-01-06",
                         "author": {
                             "@type": "Organization",
