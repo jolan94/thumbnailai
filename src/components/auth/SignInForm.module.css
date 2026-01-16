@@ -1,0 +1,125 @@
+.authFormContainer {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.authTitle {
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, #fff, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.authSubtitle {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+.authForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.formGroup label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.formGroup input {
+    padding: 0.875rem 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.formGroup input:focus {
+    outline: none;
+    border-color: #a855f7;
+    box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.2);
+}
+
+.formGroup input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.authError {
+    padding: 0.75rem 1rem;
+    background: rgba(239, 68, 68, 0.15);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 0.75rem;
+    color: #fca5a5;
+    font-size: 0.875rem;
+}
+
+.authSubmit {
+    padding: 0.875rem 1.5rem;
+    border-radius: 0.75rem;
+    border: none;
+    background: linear-gradient(135deg, #a855f7, #6366f1);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 0.5rem;
+}
+
+.authSubmit:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(168, 85, 247, 0.4);
+}
+
+.authSubmit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.authSwitch {
+    margin-top: 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.authSwitch span {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.switchButton {
+    background: none;
+    border: none;
+    color: #a855f7;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.switchButton:hover {
+    color: #c084fc;
+}
