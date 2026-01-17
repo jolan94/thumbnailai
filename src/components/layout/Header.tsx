@@ -4,8 +4,15 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, LayoutDashboard } from "lucide-react";
 import { StoreBadge } from "@/components/ui/store-badges";
+import {
+    SignInButton,
+    SignUpButton,
+    SignedIn,
+    SignedOut,
+    UserButton,
+} from "@clerk/nextjs";
 
 const navLinks = [
     { href: "#features", label: "Features" },
@@ -67,11 +74,47 @@ export function Header() {
                         ))}
                     </div>
 
-                    {/* CTA Button */}
+                    {/* Auth & CTA Buttons */}
                     <div className="flex items-center gap-3">
-                        <div className="hidden sm:block">
-                            <StoreBadge store="apple" size="sm" />
+                        {/* Auth buttons - Desktop */}
+                        <div className="hidden sm:flex items-center gap-2">
+                            <SignedOut>
+                                <SignInButton mode="modal">
+                                    <button className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+                                        Sign In
+                                    </button>
+                                </SignInButton>
+                                <SignUpButton mode="modal">
+                                    <button className="px-4 py-2 text-sm font-medium bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors">
+                                        Get Started
+                                    </button>
+                                </SignUpButton>
+                            </SignedOut>
+                            <SignedIn>
+                                <Link
+                                    href="/dashboard"
+                                    className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                                >
+                                    <LayoutDashboard className="w-4 h-4" />
+                                    Dashboard
+                                </Link>
+                                <UserButton
+                                    afterSignOutUrl="/"
+                                    appearance={{
+                                        elements: {
+                                            avatarBox: "w-9 h-9",
+                                        },
+                                    }}
+                                />
+                            </SignedIn>
                         </div>
+
+                        {/* Store Badge - Only show when signed out */}
+                        <SignedOut>
+                            <div className="hidden md:block">
+                                <StoreBadge store="apple" size="sm" />
+                            </div>
+                        </SignedOut>
 
                         {/* Mobile Menu Toggle */}
                         <button
@@ -106,6 +149,41 @@ export function Header() {
                                     {link.label}
                                 </Link>
                             ))}
+
+                            {/* Mobile Auth */}
+                            <div className="px-4 py-2 border-t border-border/50 mt-2 pt-4">
+                                <SignedOut>
+                                    <div className="flex flex-col gap-2">
+                                        <SignInButton mode="modal">
+                                            <button className="w-full px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-colors text-left">
+                                                Sign In
+                                            </button>
+                                        </SignInButton>
+                                        <SignUpButton mode="modal">
+                                            <button className="w-full px-4 py-2 text-sm font-medium bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors">
+                                                Get Started
+                                            </button>
+                                        </SignUpButton>
+                                    </div>
+                                </SignedOut>
+                                <SignedIn>
+                                    <div className="flex flex-col gap-2">
+                                        <Link
+                                            href="/dashboard"
+                                            onClick={() => setIsMobileMenuOpen(false)}
+                                            className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-colors"
+                                        >
+                                            <LayoutDashboard className="w-4 h-4" />
+                                            Dashboard
+                                        </Link>
+                                        <div className="px-4 py-2 flex items-center gap-3">
+                                            <UserButton afterSignOutUrl="/" />
+                                            <span className="text-sm text-muted-foreground">Your Account</span>
+                                        </div>
+                                    </div>
+                                </SignedIn>
+                            </div>
+
                             <div className="px-4 py-2 flex gap-2">
                                 <StoreBadge store="apple" size="sm" />
                                 <StoreBadge store="google" size="sm" />

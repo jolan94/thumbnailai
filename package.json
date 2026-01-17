@@ -9,12 +9,14 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@auth/core": "^0.37.0",
-    "@convex-dev/auth": "^0.0.90",
+    "@clerk/nextjs": "^6.36.8",
+    "@fal-ai/client": "^1.8.3",
+    "@fal-ai/server-proxy": "^1.1.2",
     "@radix-ui/react-accordion": "^1.2.12",
     "@radix-ui/react-slot": "^1.2.4",
     "@radix-ui/react-toggle": "^1.1.10",
     "class-variance-authority": "^0.7.1",
+    "cloudinary": "^2.9.0",
     "clsx": "^2.1.1",
     "convex": "^1.31.5",
     "framer-motion": "^12.23.25",
