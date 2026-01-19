@@ -109,12 +109,7 @@ export function Header() {
                             </SignedIn>
                         </div>
 
-                        {/* Store Badge - Only show when signed out */}
-                        <SignedOut>
-                            <div className="hidden md:block">
-                                <StoreBadge store="apple" size="sm" />
-                            </div>
-                        </SignedOut>
+
 
                         {/* Mobile Menu Toggle */}
                         <button

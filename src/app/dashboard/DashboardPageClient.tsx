@@ -25,6 +25,7 @@ export default function DashboardPageClient() {
     const [isGenerating, setIsGenerating] = useState(false);
     const [newestId, setNewestId] = useState<Id<"thumbnails"> | undefined>();
     const [hasScrolledPastPrompt, setHasScrolledPastPrompt] = useState(false);
+    const [isDragging, setIsDragging] = useState(false);
 
     // New state for reference images and count
     const [referenceImages, setReferenceImages] = useState<ReferenceImage[]>([]);
@@ -54,6 +55,86 @@ export default function DashboardPageClient() {
         window.addEventListener("scroll", handleScroll, { passive: true });
         return () => window.removeEventListener("scroll", handleScroll);
     }, [hasResults]);
+
+    // Drag and Drop handlers
+    const handleDragOver = useCallback((e: React.DragEvent) => {
+        e.preventDefault();
+        e.stopPropagation();
+        if (!isDragging) setIsDragging(true);
+    }, [isDragging]);
+
+    const handleDragLeave = useCallback((e: React.DragEvent) => {
+        e.preventDefault();
+        e.stopPropagation();
+        // Only set dragging to false if we're leaving the window or the main container
+        if (e.relatedTarget === null) {
+            setIsDragging(false);
+        }
+    }, []);
+
+    const processFiles = useCallback(async (files: FileList) => {
+        const maxImages = 5;
+        const currentCount = referenceImages.length;
+        const remainingSlots = maxImages - currentCount;
+
+        if (remainingSlots <= 0) return;
+
+        const filesToProcess = Array.from(files)
+            .filter(file => file.type.startsWith('image/'))
+            .slice(0, remainingSlots);
+
+        if (filesToProcess.length === 0) return;
+
+        // Process each file
+        for (const file of filesToProcess) {
+            // Read file as base64
+            const base64 = await new Promise<string>((resolve) => {
+                const reader = new FileReader();
+                reader.onload = (event) => resolve(event.target?.result as string);
+                reader.readAsDataURL(file);
+            });
+
+            const tempId = `temp-${Date.now()}-${Math.random()}`;
+
+            // Add with local preview immediately
+            const newImage: ReferenceImage = {
+                id: tempId,
+                localPreview: base64,
+                isUploading: true,
+            };
+
+            // Update state
+            setReferenceImages(prev => [...prev, newImage]);
+
+            // Import dynamically to avoid circular dependencies if any, 
+            // or just use the imported function if it was added to imports.
+            // Assuming uploadReferenceImage is available from @/lib/fal
+            const { uploadReferenceImage } = await import("@/lib/fal");
+            const result = await uploadReferenceImage(base64, file.name);
+
+            if (result.success) {
+                setReferenceImages(prev => prev.map(img =>
+                    img.id === tempId
+                        ? { ...img, falUrl: result.url, isUploading: false }
+                        : img
+                ));
+            } else {
+                setReferenceImages(prev => prev.filter(img => img.id !== tempId));
+            }
+        }
+    }, [referenceImages.length]);
+
+    const handleDrop = useCallback(async (e: React.DragEvent) => {
+        e.preventDefault();
+        e.stopPropagation();
+        setIsDragging(false);
+
+        const files = e.dataTransfer.files;
+        if (files && files.length > 0) {
+            await processFiles(files);
+        }
+    }, [processFiles]);
+
 
     // Handle generate action
     const handleGenerate = useCallback(async () => {
@@ -135,7 +216,30 @@ export default function DashboardPageClient() {
     const showCompactPrompt = hasResults && hasScrolledPastPrompt;
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-white to-muted/20 dark:from-background dark:to-muted/10">
+        <div
+            className="min-h-screen bg-gradient-to-b from-white to-muted/20 dark:from-background dark:to-muted/10 relative"
+            onDragOver={handleDragOver}
+            onDragLeave={handleDragLeave}
+            onDrop={handleDrop}
+        >
+            {/* Drag Overlay */}
+            <AnimatePresence>
+                {isDragging && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="fixed inset-0 z-50 bg-background/80 backdrop-blur-sm flex items-center justify-center border-4 border-dashed border-primary m-4 rounded-xl"
+                    >
+                        <div className="text-center pointer-events-none">
+                            <div className="text-4xl mb-4">📂</div>
+                            <h3 className="text-2xl font-semibold mb-2">Drop images where</h3>
+                            <p className="text-muted-foreground">Add reference images for your thumbnail</p>
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+
             <DashboardHeader />
 
             {/* Compact prompt - sticky at top when scrolled */}

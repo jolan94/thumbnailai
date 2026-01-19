@@ -184,7 +184,7 @@ export function PromptInput({
                                 <ReferenceUpload
                                     images={referenceImages}
                                     onImagesChange={onReferenceImagesChange}
-                                    maxImages={3}
+                                    maxImages={5}
                                     disabled={isLoading}
                                 />
                             </div>
